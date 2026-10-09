@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Call It Home Interiors designs and builds homes in Bangalore: modular kitchens, wardrobes, living and bedroom interiors, pooja units and turnkey execution by Kalpana Sinha.">
+<meta name="theme-color" content="#152030">
+<meta property="og:title" content="Call It Home Interiors, Bangalore">
+<meta property="og:description" content="Interior design and turnkey execution for homes in Bangalore.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.callithome.in/images/dining.jpg">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<title>Call It Home Interiors | Interior Designer in Bangalore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: navy hero and contact bands framing a pale stone body; large Bodoni headlines, gold line-art room echoing the CH mark. */
+:root{
+  --bg:#ebe8e2; --bg2:#e1ddd4; --card:#f5f3ee;
+  --fg:#172234; --muted:#586272; --line:#cdc7ba;
+  --navy:#152030; --navy2:#1e2c42;
+  --on-navy:#efe9dc; --on-navy-muted:#a7aebb; --navy-line:#2e3c54;
+  --gold:#d6b06a; --gold-ink:#876528; --copper:#b87b55;
+  --f-display:"Bodoni Moda","Didot","Georgia",serif;
+  --f-body:"Jost","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1826; --bg2:#152033; --card:#182438;
+  --fg:#ece6d9; --muted:#9ba5b4; --line:#27344a;
+  --navy:#0a111c; --navy2:#121d2e; --gold-ink:#d6b06a; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#0f1826; --bg2:#152033; --card:#182438;
+  --fg:#ece6d9; --muted:#9ba5b4; --line:#27344a;
+  --navy:#0a111c; --navy2:#121d2e; --gold-ink:#d6b06a; color-scheme:dark;}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--fg);font:300 17px/1.65 var(--f-body);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.1;margin:0;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:20px}
+section[id]{scroll-margin-top:84px}
+.eyebrow{font:500 12px/1 var(--f-body);letter-spacing:.22em;text-transform:uppercase;color:var(--gold-ink)}
+.on-navy .eyebrow{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:.6em;font:500 13px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:16px 24px;border:1px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn-gold{background:var(--gold);color:#152030}
+.btn-gold:hover{background:#e6c283}
+.btn-line{border-color:var(--gold);color:var(--gold);background:transparent}
+.btn-line:hover{background:var(--gold);color:#152030}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);color:var(--on-navy);border-bottom:1px solid var(--navy-line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:46px;width:auto;display:block}
+.brand b{font:400 22px/1 var(--f-display);letter-spacing:.02em;display:block}
+.brand small{font:500 10px/1 var(--f-body);letter-spacing:.3em;text-transform:uppercase;color:var(--gold);display:block;margin-top:6px}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.nav ul a{font:400 13px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--on-navy-muted)}
+.nav ul a:hover{color:var(--gold)}
+.nav .btn{padding:12px 18px}
+@media (max-width:900px){.nav ul{display:none}}
+@media (max-width:420px){.brand small{display:none}.nav .btn span.long{display:none}}
+
+/* hero */
+.hero{background:var(--navy);color:var(--on-navy);padding-block:72px 80px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.7rem,6.4vw,5.2rem);margin-block:22px 24px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero p.lead{font-size:1.15rem;color:var(--on-navy-muted);max-width:34em}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:44px;padding-top:24px;border-top:1px solid var(--navy-line);font-size:14px;color:var(--on-navy-muted)}
+.hero .meta span b{color:var(--on-navy);font-weight:400}
+.hero-fig{margin:0;position:relative;justify-self:end;width:100%;max-width:540px;min-width:0}
+.hero-fig::before{content:"";position:absolute;inset:16px -12px -12px 16px;border:1px solid var(--gold)}
+.hero-fig img{position:relative;display:block;width:100%;height:auto;aspect-ratio:5/4;object-fit:cover;object-position:28% center}
+.hero-fig figcaption{position:relative;margin-top:26px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--on-navy-muted)}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-fig{justify-self:start;max-width:560px}.hero{padding-block:48px 56px}}
+
+/* generic section */
+.sec{padding-block:96px}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:24px 48px;align-items:end;margin-bottom:56px}
+.sec-head h2{font-size:clamp(2rem,4.4vw,3.4rem);margin-top:16px}
+.sec-head p{color:var(--muted);max-width:32em}
+@media (max-width:760px){.sec{padding-block:64px}.sec-head{grid-template-columns:1fr;margin-bottom:36px}}
+
+/* promise strip */
+.promise{background:var(--bg2);padding-block:56px}
+.promise .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.promise h3{font-size:1.5rem;margin-bottom:10px}
+.promise p{color:var(--muted);font-size:16px}
+@media (max-width:760px){.promise .wrap{grid-template-columns:1fr;gap:28px}}
+
+/* services */
+.svc{display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
+.svc article{border-top:1px solid var(--line);padding-block:22px 26px;display:grid;grid-template-columns:132px 1fr;gap:20px;align-items:start;min-width:0}
+.svc img{width:132px;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--bg2)}
+@media (max-width:420px){.svc article{grid-template-columns:96px 1fr;gap:14px}.svc img{width:96px}}
+.svc h3{font-size:1.55rem;margin-bottom:8px}
+.svc p{color:var(--muted);font-size:16px;max-width:30em}
+@media (max-width:760px){.svc{grid-template-columns:1fr}}
+
+/* portfolio */
+.work{background:var(--bg2)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.filters button{font:500 12px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;padding:13px 16px;border:1px solid var(--line);background:transparent;color:var(--fg);cursor:pointer}
+.filters button:hover{border-color:var(--fg)}
+.filters button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.shot{position:relative;margin:0;padding:0;border:0;background:var(--navy);cursor:zoom-in;display:block;width:100%;overflow:hidden;aspect-ratio:4/3;color:var(--on-navy);text-align:left;min-width:0}
+.shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.shot:hover img{transform:scale(1.04)}
+.shot span{position:absolute;left:0;right:0;bottom:0;padding:38px 18px 16px;background:linear-gradient(to top,rgba(10,17,28,.82),rgba(10,17,28,0));font:400 1.2rem/1.2 var(--f-display)}
+@media (max-width:860px){.grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.grid{grid-template-columns:1fr}}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(8,13,22,.95);display:flex;align-items:center;justify-content:center;padding:64px 16px 84px}
+.lb img{max-width:100%;max-height:100%;display:block;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lb .cap{position:absolute;left:16px;right:16px;bottom:calc(24px + env(safe-area-inset-bottom,0px));text-align:center;color:var(--on-navy);font:400 1.1rem/1.3 var(--f-display)}
+.lb button{position:absolute;background:rgba(21,32,48,.7);border:1px solid var(--navy-line);color:var(--on-navy);width:46px;height:46px;cursor:pointer;font-size:20px;line-height:1}
+.lb button:hover{border-color:var(--gold);color:var(--gold)}
+.lb .x{top:calc(12px + env(safe-area-inset-top,0px));right:12px}
+.lb .p{left:12px;top:50%;transform:translateY(-50%)}
+.lb .n{right:12px;top:50%;transform:translateY(-50%)}
+.hint{margin-top:20px;font-size:14px;color:var(--muted)}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:s;list-style:none;margin:0;padding:0}
+.steps li{counter-increment:s;border-top:2px solid var(--fg);padding:22px 22px 0 0;min-width:0}
+.steps li::before{content:counter(s);font:400 40px/1 var(--f-display);color:var(--gold-ink);display:block;margin-bottom:18px}
+.steps h3{font-size:1.35rem;margin-bottom:8px}
+.steps p{font-size:15px;color:var(--muted)}
+@media (max-width:980px){.steps{grid-template-columns:1fr 1fr;row-gap:36px;column-gap:24px}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+
+/* testimonials */
+.quotes{background:var(--bg2)}
+.qgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.q{background:var(--card);padding:34px 30px;display:flex;flex-direction:column;gap:22px;min-width:0}
+.q blockquote{margin:0;font:400 1.3rem/1.45 var(--f-display)}
+.q footer{margin-top:auto;font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+.q footer b{display:block;color:var(--fg);font-weight:500}
+.q .tag{font:500 10px/1 var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-ink)}
+@media (max-width:900px){.qgrid{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:var(--navy);color:var(--on-navy);padding-block:96px}
+.contact .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:start}
+.contact h2{font-size:clamp(2rem,4.4vw,3.4rem);margin-block:16px 20px}
+.contact .intro{color:var(--on-navy-muted);max-width:30em}
+.cardimg{display:block;width:100%;max-width:480px;height:auto;margin-top:36px;box-shadow:0 24px 50px rgba(0,0,0,.45)}
+.details{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:0}
+.details li{display:grid;grid-template-columns:110px 1fr;gap:12px;padding-block:13px;border-top:1px solid var(--navy-line);font-size:16px;min-width:0}
+.details li:last-child{border-bottom:1px solid var(--navy-line)}
+.details span{font:500 11px/1.9 var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.details a{text-decoration:none;overflow-wrap:anywhere}
+.details a:hover{color:var(--gold)}
+.form{background:var(--navy2);padding:36px 32px;border:1px solid var(--navy-line);min-width:0}
+.form h3{font-size:1.7rem;margin-bottom:6px}
+.form .sub{font-size:15px;color:var(--on-navy-muted);margin-bottom:24px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:7px;margin-bottom:16px;min-width:0}
+.field label{font:500 11px/1 var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.field input,.field select,.field textarea{font:300 16px/1.4 var(--f-body);color:var(--on-navy);background:var(--navy);border:1px solid var(--navy-line);padding:13px 14px;width:100%;border-radius:0}
+.field textarea{min-height:104px;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:#6f7a8c}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.status{min-height:1.5em;margin-top:14px;font-size:14px;color:var(--gold)}
+.mailline{margin-top:6px;font-size:14px;color:var(--on-navy-muted);display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.copy{font:500 11px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;background:none;color:var(--gold);border:1px solid var(--navy-line);padding:8px 10px;cursor:pointer}
+.copy:hover{border-color:var(--gold)}
+@media (max-width:900px){.contact .wrap{grid-template-columns:1fr;gap:40px}.contact{padding-block:64px}}
+@media (max-width:520px){.row{grid-template-columns:1fr;gap:0}.form{padding:26px 18px}.details li{grid-template-columns:1fr;gap:2px}}
+
+/* footer */
+footer.site{background:var(--navy);color:var(--on-navy-muted);border-top:1px solid var(--navy-line);padding-block:36px 40px;font-size:14px}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between}
+footer.site img{height:40px;width:auto;display:block}
+footer.site a{text-decoration:none}
+footer.site a:hover{color:var(--gold)}
+footer.site nav{display:flex;gap:22px;flex-wrap:wrap}
+
+/* floating whatsapp */
+.wa-float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:inline-flex;align-items:center;gap:10px;background:#25a05a;color:#fff;text-decoration:none;font:500 13px/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase;padding:14px 18px;border-radius:999px;box-shadow:0 10px 26px rgba(0,0,0,.35)}
+.wa-float svg{width:22px;height:22px}
+.wa-float:hover{background:#1f8c4e}
+@media (max-width:420px){.wa-float span{display:none}.wa-float{padding:15px}}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Call It Home Interiors","url":"https://www.callithome.in","telephone":"+91-8618731376","email":"callithome3@gmail.com","image":"https://www.callithome.in/images/dining.jpg","founder":{"@type":"Person","name":"Kalpana Sinha"},"address":{"@type":"PostalAddress","addressLocality":"Bangalore","addressCountry":"IN"},"sameAs":["https://www.instagram.com/callithome.interiors"]}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.27-1.5A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.2 15.02l-.3-.18-3.1.88.9-3.02-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3 3.7c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.08 3.3 5.1 4.5 2.5 1 3.02.8 3.56.75.55-.05 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.43-.07-.12-.27-.2-.57-.35-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.4-1.5-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.6.14-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.2-.24-.58-.5-.5-.67-.5h-.57Z"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Call It Home Interiors, home">
+      <img src="assets/logo.png" alt="Call It Home logo">
+      <span><b>Call It Home</b><small>Interiors</small></span>
+    </a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-gold wa-link" href="https://wa.me/918618731376" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span>Book <span class="long">on WhatsApp</span></span></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero on-navy">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Interior design &middot; Bangalore</p>
+      <h1>Rooms planned around how you <em>actually live.</em></h1>
+      <p class="lead">Call It Home designs and builds homes in Bangalore. Kalpana Sinha works with you from the first measurement to the final handover, so the space feels like yours on the day you move in.</p>
+      <div class="cta">
+        <a class="btn btn-gold wa-link" href="https://wa.me/918618731376" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Book a consultation</a>
+        <a class="btn btn-line" href="#portfolio">See our work</a>
+      </div>
+      <div class="meta">
+        <span><b>Kalpana Sinha</b>, Principal designer</span>
+        <span>+91 86187 31376</span>
+        <span>callithome3@gmail.com</span>
+      </div>
+    </div>
+    <figure class="hero-fig"><img src="images/dining.jpg" alt="3D design view of an open living and dining area with an arched mirror unit, dining table and kitchen bar" width="1280" height="720"><figcaption>3D design view &middot; Living and dining</figcaption></figure>
+  </div>
+</section>
+
+<section class="promise">
+  <div class="wrap">
+    <div><h3>Designed for daily life</h3><p>We ask how you cook, work, store and host before any drawing starts.</p></div>
+    <div><h3>One point of contact</h3><p>You speak with the same designer from concept through handover.</p></div>
+    <div><h3>Clear timelines and costs</h3><p>You see scope, materials and schedule in writing before work begins.</p></div>
+  </div>
+</section>
+
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">What we do</p><h2>Services</h2></div>
+      <p>From a single room to a full home, each project is planned, detailed and built to suit the people living in it.</p>
+    </div>
+    <div class="svc">
+      <article><img src="images/dining.jpg" alt="" loading="lazy" width="264" height="198"><div><h3>Design consultation and space planning</h3><p>Layouts, furniture positions and concept boards, worked out around your routines.</p></div></article>
+      <article><img src="images/kitchen.jpg" alt="" loading="lazy" width="264" height="198"><div><h3>Modular kitchens</h3><p>Efficient work triangles, durable finishes and storage that fits the way you cook.</p></div></article>
+      <article><img src="images/wardrobe.jpg" alt="" loading="lazy" width="264" height="198"><div><h3>Wardrobes and storage</h3><p>Built-in wardrobes, shoe units and utility storage sized to your belongings.</p></div></article>
+      <article><img src="images/living-tv.jpg" alt="" loading="lazy" width="264" height="198"><div><h3>Living and bedroom interiors</h3><p>TV units, panelling, false ceilings and lighting that make rooms feel finished.</p></div></article>
+      <article><img src="images/pooja-unit.jpg" alt="" loading="lazy" width="264" height="198"><div><h3>Custom furniture</h3><p>Beds, consoles, pooja units and seating made to the dimensions of your room.</p></div></article>
+      <article><img src="images/art-wall.jpg" alt="" loading="lazy" width="264" height="198"><div><h3>Lighting and styling</h3><p>Pendants, cove lights, art and accessories chosen to complete the scheme.</p></div></article>
+      <article><img src="images/utility-laundry.jpg" alt="" loading="lazy" width="264" height="198"><div><h3>Turnkey execution</h3><p>Carpentry, electrical, painting and installation managed on site by our team.</p></div></article>
+      <article><img src="images/bathroom.jpg" alt="" loading="lazy" width="264" height="198"><div><h3>Renovation and remodelling</h3><p>Updating an existing home within your structure, schedule and budget.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec work" id="portfolio">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Selected work</p><h2>Portfolio</h2></div>
+      <p>3D design views from a recent home project. Tap any image to enlarge.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="living" aria-pressed="false">Living and dining</button>
+      <button type="button" data-f="pooja" aria-pressed="false">Pooja unit</button>
+      <button type="button" data-f="kitchen" aria-pressed="false">Kitchen and bath</button>
+      <button type="button" data-f="bed" aria-pressed="false">Bedrooms</button>
+    </div>
+    <div class="grid" id="grid">
+      <button type="button" class="shot" data-cat="living" aria-label="Enlarge: Living and dining"><img src="images/dining.jpg" alt="Open living and dining area with arched mirror unit" loading="lazy" width="1280" height="720"><span>Living and dining</span></button>
+      <button type="button" class="shot" data-cat="living" aria-label="Enlarge: Living room, TV wall"><img src="images/living-tv.jpg" alt="Living room with L-shaped sofa and fluted TV wall" loading="lazy" width="1280" height="720"><span>Living room, TV wall</span></button>
+      <button type="button" class="shot" data-cat="living" aria-label="Enlarge: Living room, arched panelling"><img src="images/living-sofa.jpg" alt="Sofa seating against an arched panelled wall" loading="lazy" width="1280" height="720"><span>Living room, arched panelling</span></button>
+      <button type="button" class="shot" data-cat="living" aria-label="Enlarge: Entry with arch mirror"><img src="images/entry-partition.jpg" alt="Entry with arched mirror unit and rose-gold partition" loading="lazy" width="1280" height="720"><span>Entry with arch mirror</span></button>
+      <button type="button" class="shot" data-cat="living" aria-label="Enlarge: Passage with feature art"><img src="images/art-wall.jpg" alt="Passage with framed artwork and cove lighting" loading="lazy" width="1280" height="720"><span>Passage with feature art</span></button>
+      <button type="button" class="shot" data-cat="pooja" aria-label="Enlarge: Pooja unit"><img src="images/pooja-unit.jpg" alt="Pooja unit with illustrated panel and drawers" loading="lazy" width="1280" height="720"><span>Pooja unit</span></button>
+      <button type="button" class="shot" data-cat="pooja" aria-label="Enlarge: Pooja unit and kitchen arch"><img src="images/pooja-passage.jpg" alt="Pooja unit beside the arched kitchen entrance" loading="lazy" width="1280" height="720"><span>Pooja unit and kitchen arch</span></button>
+      <button type="button" class="shot" data-cat="kitchen" aria-label="Enlarge: L-shaped kitchen"><img src="images/kitchen.jpg" alt="L-shaped kitchen with glossy rose finish and marble backsplash" loading="lazy" width="1280" height="720"><span>L-shaped kitchen</span></button>
+      <button type="button" class="shot" data-cat="kitchen" aria-label="Enlarge: Kitchen, tall units and hob"><img src="images/kitchen-detail.jpg" alt="Kitchen wall units, chimney and four-burner hob" loading="lazy" width="1280" height="720"><span>Kitchen, tall units and hob</span></button>
+      <button type="button" class="shot" data-cat="kitchen" aria-label="Enlarge: Utility and laundry"><img src="images/utility-laundry.jpg" alt="Utility counter with sink and washing machine" loading="lazy" width="1280" height="720"><span>Utility and laundry</span></button>
+      <button type="button" class="shot" data-cat="kitchen" aria-label="Enlarge: Utility sink"><img src="images/utility-sink.jpg" alt="Utility sink with black pull-down tap" loading="lazy" width="1280" height="720"><span>Utility sink</span></button>
+      <button type="button" class="shot" data-cat="kitchen" aria-label="Enlarge: Bathroom"><img src="images/bathroom.jpg" alt="Bathroom with arched mirror and wall-hung vanity" loading="lazy" width="1280" height="720"><span>Bathroom</span></button>
+      <button type="button" class="shot" data-cat="bed" aria-label="Enlarge: Bedroom, arched headboard"><img src="images/bedroom.jpg" alt="Bedroom with arched floral headboard wall and gold pendants" loading="lazy" width="1280" height="720"><span>Bedroom, arched headboard</span></button>
+      <button type="button" class="shot" data-cat="bed" aria-label="Enlarge: Bedroom and wardrobe"><img src="images/bedroom-wide.jpg" alt="Bedroom with glossy wardrobe and arched passage" loading="lazy" width="1280" height="720"><span>Bedroom and wardrobe</span></button>
+      <button type="button" class="shot" data-cat="bed" aria-label="Enlarge: Wardrobe and feature wall"><img src="images/wardrobe.jpg" alt="Glossy wardrobe beside a wallpaper feature wall" loading="lazy" width="1280" height="720"><span>Wardrobe and feature wall</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">How it works</p><h2>Our process</h2></div>
+      <p>Five stages, each with a clear output, so you always know what has been decided and what comes next.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Consultation</h3><p>We visit the site, take measurements and learn your needs and budget.</p></li>
+      <li><h3>Concept and layout</h3><p>You review space plans and mood boards, and we refine them together.</p></li>
+      <li><h3>Design and materials</h3><p>3D views, material samples and a detailed quotation for approval.</p></li>
+      <li><h3>Execution</h3><p>Our team builds on site with regular updates and photos.</p></li>
+      <li><h3>Handover and care</h3><p>A final walkthrough, a snag list closed out, and support after move-in.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec quotes" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Client words</p><h2>Reviews</h2></div>
+      <p>What homeowners say about working with Call It Home.</p>
+    </div>
+    <!-- Replace these three with real client reviews before publishing. -->
+    <div class="qgrid">
+      <figure class="q" style="margin:0"><span class="tag">Sample text</span><blockquote>Add a client's own words here: two or three sentences on the design process and the finish.</blockquote><footer><b>Client name</b>Locality, Bangalore</footer></figure>
+      <figure class="q" style="margin:0"><span class="tag">Sample text</span><blockquote>A review about timelines and communication during the build works well in this slot.</blockquote><footer><b>Client name</b>Locality, Bangalore</footer></figure>
+      <figure class="q" style="margin:0"><span class="tag">Sample text</span><blockquote>A third review, ideally from a different project type such as a kitchen or a full home.</blockquote><footer><b>Client name</b>Locality, Bangalore</footer></figure>
+    </div>
+  </div>
+</section>
+
+<section class="contact on-navy" id="contact">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Let's plan your home</h2>
+      <p class="intro">Tell us about your space. Kalpana will reply on WhatsApp or email to set up a first consultation.</p>
+      <ul class="details">
+        <li><span>Designer</span><div>Kalpana Sinha</div></li>
+        <li><span>Phone</span><a href="tel:+918618731376">+91 86187 31376</a></li>
+        <li><span>Email</span><a href="mailto:callithome3@gmail.com">callithome3@gmail.com</a></li>
+        <li><span>Website</span><a href="https://www.callithome.in" target="_blank" rel="noopener">www.callithome.in</a></li>
+        <li><span>Instagram</span><a href="https://www.instagram.com/callithome.interiors" target="_blank" rel="noopener">callithome.interiors</a></li>
+        <li><span>Studio</span><div>Bangalore, India</div></li>
+      </ul>
+      <img class="cardimg" src="assets/card.jpg" alt="Call It Home business card for Kalpana Sinha, with phone, email, website, Instagram and Bangalore address" loading="lazy">
+    </div>
+
+    <form class="form" id="enquiry" novalidate>
+      <h3>Book a consultation</h3>
+      <p class="sub">Fill this in, then send it by WhatsApp or email. Nothing is sent until you tap a button.</p>
+      <div class="row">
+        <div class="field"><label for="f-name">Your name *</label><input id="f-name" name="name" autocomplete="name" placeholder="Full name"></div>
+        <div class="field"><label for="f-phone">Phone *</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+91"></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="f-type">Project</label>
+          <select id="f-type" name="type">
+            <option>Full home interiors</option><option>Modular kitchen</option><option>Wardrobes and storage</option><option>Living or bedroom</option><option>Renovation</option><option>Something else</option>
+          </select></div>
+        <div class="field"><label for="f-area">Locality</label><input id="f-area" name="area" placeholder="e.g. Whitefield"></div>
+      </div>
+      <div class="field"><label for="f-msg">Tell us more</label><textarea id="f-msg" name="msg" placeholder="Home size, timeline, budget range, anything useful"></textarea></div>
+      <div class="actions">
+        <a class="btn btn-gold" id="send-wa" href="https://wa.me/918618731376" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Send on WhatsApp</a>
+        <a class="btn btn-line" id="send-mail" href="mailto:callithome3@gmail.com">Send by email</a>
+      </div>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+      <div class="mailline"><span>Email: callithome3@gmail.com</span><button type="button" class="copy" id="copy">Copy address</button></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" style="color:var(--on-navy)"><img src="assets/logo.png" alt="Call It Home logo"><span><b>Call It Home</b><small>Interiors</small></span></a>
+    <nav aria-label="Footer">
+      <a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#process">Process</a><a href="#contact">Contact</a>
+      <a href="https://www.instagram.com/callithome.interiors" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <span>&copy; 2026 Call It Home Interiors, Bangalore</span>
+  </div>
+</footer>
+
+<a class="wa-float wa-link" href="https://wa.me/918618731376" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg><use href="#wa"/></svg><span>WhatsApp</span></a>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button type="button" class="x" id="lb-x" aria-label="Close">&times;</button>
+  <button type="button" class="p" id="lb-p" aria-label="Previous photo">&#8249;</button>
+  <img id="lb-img" alt="">
+  <button type="button" class="n" id="lb-n" aria-label="Next photo">&#8250;</button>
+  <div class="cap" id="lb-cap"></div>
+</div>
+
+<script>
+(function(){
+  var NUM="918618731376", MAIL="callithome3@gmail.com";
+  var $=function(id){return document.getElementById(id)};
+  var f={name:$("f-name"),phone:$("f-phone"),type:$("f-type"),area:$("f-area"),msg:$("f-msg")};
+  var wa=$("send-wa"), mail=$("send-mail"), st=$("status");
+
+  // Generic CTAs open WhatsApp with a ready booking message
+  var generic="Hello Call It Home, I would like to book a design consultation for my home.";
+  Array.prototype.forEach.call(document.querySelectorAll(".wa-link"),function(a){
+    a.href="https://wa.me/"+NUM+"?text="+encodeURIComponent(generic);
+  });
+
+  function body(){
+    var l=["Hello Call It Home, I would like to book a design consultation.","",
+      "Name: "+f.name.value.trim(),
+      "Phone: "+f.phone.value.trim(),
+      "Project: "+f.type.value];
+    if(f.area.value.trim()) l.push("Locality: "+f.area.value.trim());
+    if(f.msg.value.trim()) l.push("","Details: "+f.msg.value.trim());
+    return l.join("\n");
+  }
+  function refresh(){
+    var b=body();
+    wa.href="https://wa.me/"+NUM+"?text="+encodeURIComponent(b);
+    mail.href="mailto:"+MAIL+"?subject="+encodeURIComponent("Consultation request: "+f.type.value)+"&body="+encodeURIComponent(b);
+  }
+  function guard(e){
+    var miss=!f.name.value.trim()?f.name:(!f.phone.value.trim()?f.phone:null);
+    if(miss){e.preventDefault();st.textContent="Please add your name and phone number first.";miss.focus();return false}
+    st.textContent="Opening your message. Review it and press send.";return true;
+  }
+  Object.keys(f).forEach(function(k){f[k].addEventListener("input",refresh);f[k].addEventListener("change",refresh)});
+  wa.addEventListener("click",guard);
+  mail.addEventListener("click",guard);
+  $("enquiry").addEventListener("submit",function(e){e.preventDefault();wa.click()});
+  $("copy").addEventListener("click",function(){
+    var b=this;
+    function ok(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy address"},1800)}
+    try{navigator.clipboard.writeText(MAIL).then(ok,function(){st.textContent="Copy failed. Select the address above."})}
+    catch(_){st.textContent="Copy failed. Select the address above."}
+  });
+  // Portfolio filters and lightbox
+  var shots=[].slice.call(document.querySelectorAll(".shot")), list=[], cur=0, lastFocus=null;
+  var lb=$("lb"), lbImg=$("lb-img"), lbCap=$("lb-cap");
+  [].forEach.call(document.querySelectorAll(".filters button"),function(b){
+    b.addEventListener("click",function(){
+      var k=b.getAttribute("data-f");
+      [].forEach.call(document.querySelectorAll(".filters button"),function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});
+      shots.forEach(function(s){s.hidden=(k!=="all"&&s.getAttribute("data-cat")!==k)});
+    });
+  });
+  function show(){
+    var s=list[cur], im=s.querySelector("img");
+    lbImg.src=im.getAttribute("src"); lbImg.alt=im.alt;
+    lbCap.textContent=s.querySelector("span").textContent+"  ("+(cur+1)+" of "+list.length+")";
+  }
+  function openLb(s){
+    list=shots.filter(function(x){return !x.hidden}); cur=list.indexOf(s); lastFocus=s;
+    show(); lb.hidden=false; document.body.style.overflow="hidden"; $("lb-x").focus();
+  }
+  function closeLb(){lb.hidden=true; document.body.style.overflow=""; if(lastFocus) lastFocus.focus()}
+  function step(d){cur=(cur+d+list.length)%list.length; show()}
+  shots.forEach(function(s){s.addEventListener("click",function(){openLb(s)})});
+  $("lb-x").addEventListener("click",closeLb);
+  $("lb-p").addEventListener("click",function(){step(-1)});
+  $("lb-n").addEventListener("click",function(){step(1)});
+  lb.addEventListener("click",function(e){if(e.target===lb) closeLb()});
+  document.addEventListener("keydown",function(e){
+    if(lb.hidden) return;
+    if(e.key==="Escape") closeLb();
+    else if(e.key==="ArrowLeft") step(-1);
+    else if(e.key==="ArrowRight") step(1);
+  });
+  refresh();
+})();
+</script>
+
+</body>
+</html>
